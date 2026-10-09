@@ -11,13 +11,10 @@ function Hero() {
           I have 3+ years of experience in Linux Administration,
           Server Management and Troubleshooting.
         </p>
-
-        <button>Download Resume</button>
-        <button>Contact Me</button>
       </div>
 
       <div className="hero-right">
-        Photo
+        PHOTO
       </div>
 
     </section>
