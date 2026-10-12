@@ -106,3 +106,26 @@ footer {
   padding: 25px;
   color: #94a3b8;
 }
+
+
+.skills {
+  padding: 50px 8%;
+}
+
+.skills h2 {
+  margin-bottom: 25px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-list span {
+  padding: 10px 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  color: var(--accent-color);
+}
+
