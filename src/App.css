@@ -1,4 +1,8 @@
 
+:root {
+  --accent-color: #FF9933;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +29,7 @@ body {
 }
 
 .logo {
-  color: #FF9933;
+  color: var(--accent-color);
 }
 
 .navbar p {
@@ -39,13 +43,13 @@ body {
 }
 
 .intro {
-  color: #FF9933;
+  color: var(--accent-color);
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  color: #FF9933;
+  color: var(--accent-color);
   font-size: clamp(36px, 6vw, 60px);
   line-height: 1.2;
   margin-bottom: 25px;
@@ -74,7 +78,7 @@ body {
 }
 
 .primary {
-  background-color: #FF9933;
+  background-color: var(--accent-color);
   color: #0b1120;
 }
 
