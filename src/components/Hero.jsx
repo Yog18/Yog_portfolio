@@ -1,23 +1,30 @@
+
 function Hero() {
   return (
-    <section className="hero">
+    <main className="hero">
+      <p className="intro">HELLO, WORLD! 👋</p>
 
-      <div className="hero-left">
-        <h1>Hi, I'm Yogesh Chhabra</h1>
+      <h1>
+        I'm a Linux Administrator
+        <br />
+        Learning DevOps.
+      </h1>
 
-        <h2>Linux Administrator | Junior DevOps Engineer</h2>
+      <p className="description">
+        Welcome to my personal portfolio.
+        I am learning Linux, Git, React and Cloud technologies.
+      </p>
 
-        <p>
-          I have 3+ years of experience in Linux Administration,
-          Server Management and Troubleshooting.
-        </p>
+      <div className="buttons">
+        <a href="#about" className="btn primary">
+          About Me
+        </a>
+
+        <a href="#contact" className="btn secondary">
+          Contact Me
+        </a>
       </div>
-
-      <div className="hero-right">
-        PHOTO
-      </div>
-
-    </section>
+    </main>
   );
 }
 
