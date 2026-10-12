@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-  color: #38bdf8;
+  color: #FF9933;
 }
 
 .navbar p {
@@ -39,13 +39,13 @@ body {
 }
 
 .intro {
-  color: #38bdf8;
+  color: #FF9933;
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  color: #38bdf8;
+  color: #FF9933;
   font-size: clamp(36px, 6vw, 60px);
   line-height: 1.2;
   margin-bottom: 25px;
@@ -74,7 +74,7 @@ body {
 }
 
 .primary {
-  background-color: #38bdf8;
+  background-color: #FF9933;
   color: #0b1120;
 }
 
