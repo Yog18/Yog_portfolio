@@ -1,16 +1,13 @@
-import Navbar from "./components/Navbar";
-import "./App.css";
-
 function App() {
   return (
-    <>
-      <Navbar />
-
-      <div>
-        <h1>Yogesh Chhabra</h1>
-        <p>Linux Administrator</p>
-      </div>
-    </>
+    <div>
+      <h1>Welcome to My Portfolio</h1>
+      <h2>Linux Administrator | DevOps Learner</h2>
+      <p>
+        Hello! I am learning Linux, React, Git, and DevOps.
+        This is my personal portfolio website.
+      </p>
+    </div>
   );
 }
 
