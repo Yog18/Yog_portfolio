@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -6,27 +7,97 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #0b1120;
+  color: #f8fafc;
 }
 
-nav {
-  padding: 20px;
+.container {
+  width: 100%;
+  min-height: 100vh;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav {
-  padding: 20px;
-
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #263247;
 }
 
-nav ul {
-  list-style: none;
+.logo {
+  color: #38bdf8;
+}
 
+.navbar p {
+  color: #94a3b8;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 0 25px;
+}
+
+.intro {
+  color: #38bdf8;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 60px);
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.description {
+  max-width: 600px;
+  color: #94a3b8;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.buttons {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: #38bdf8;
+  color: #0b1120;
+}
+
+.secondary {
+  border: 1px solid #64748b;
+  color: #f8fafc;
+}
+
+.about {
+  padding: 50px 8%;
+  background-color: #111b2e;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+}
+
+.about p {
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
 }
