@@ -1,32 +1,48 @@
+
+function ProjectCard({ title, description }) {
+  return (
+    <div className="project-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}
+
 function Projects() {
+
+    const projects = [
+    {
+        title: "Linux Administration",
+        description: "Practiced Linux user management and troubleshooting."
+    },
+    {
+        title: "Monitoring with Zabbix",
+        description: "Practiced host monitoring and alert notifications."
+    },
+    {
+        title: "Personal Portfolio",
+        description: "Building a portfolio with React, CSS and Git."
+    },
+    {
+        title: "Ansible Automation",
+        description: "Practiced automating Linux administration tasks."
+    }
+    ];
+
   return (
     <section id="projects" className="projects">
       <h2>My Projects</h2>
 
       <div className="project-list">
-        <div className="project-card">
-          <h3>Linux Administration</h3>
-          <p>
-            Practiced Linux user management, services,
-            permissions, monitoring and troubleshooting.
-          </p>
-        </div>
+        
+    {projects.map((project) => (
+    <ProjectCard
+        key={project.title}
+        title={project.title}
+        description={project.description}
+    />
+    ))}
 
-        <div className="project-card">
-          <h3>Monitoring with Zabbix</h3>
-          <p>
-            Learned host monitoring, triggers,
-            metrics and alert notifications.
-          </p>
-        </div>
-
-        <div className="project-card">
-          <h3>Personal Portfolio</h3>
-          <p>
-            Building a portfolio website using React,
-            CSS, Git and GitHub.
-          </p>
-        </div>
       </div>
     </section>
   );
