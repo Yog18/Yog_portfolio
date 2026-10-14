@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,12 +14,8 @@ function App() {
       <Hero />
       <About />
       <Skills />
-
-      <footer id="contact">
-        <h2>Contact Me</h2>
-        <p>Let's connect and learn together!</p>
-        <p>Made with ❤️ using React</p>
-      </footer>
+      <Projects />
+      <Footer />
     </div>
   );
 }

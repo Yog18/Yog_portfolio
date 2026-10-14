@@ -101,7 +101,7 @@ body {
   line-height: 1.8;
 }
 
-footer {
+.footer {
   text-align: center;
   padding: 25px;
   color: #94a3b8;
@@ -127,5 +127,38 @@ footer {
   border: 1px solid var(--accent-color);
   border-radius: 8px;
   color: var(--accent-color);
+}
+
+
+.projects {
+  padding: 50px 8%;
+  background-color: #111b2e;
+}
+
+.projects h2 {
+  margin-bottom: 25px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 1 1 250px;
+  padding: 22px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #94a3b8;
+  line-height: 1.7;
 }
 
