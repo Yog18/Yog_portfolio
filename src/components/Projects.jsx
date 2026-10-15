@@ -1,34 +1,46 @@
 
-function ProjectCard({ title, description }) {
+function ProjectCard({
+  title,
+  description,
+  category = "General",
+  technologies = []
+}) {
   return (
     <div className="project-card">
       <h3>{title}</h3>
+      <span className="project-category">{category}</span>
       <p>{description}</p>
+      <div className="technology-list">
+        {technologies.map((technology) => (
+          <span key={technology}>{technology}</span>
+        ))}
+      </div>
     </div>
   );
 }
 
 function Projects() {
   const projects = [
-    {
+        {
       title: "Linux Administration",
-      description: "Practiced Linux user management and troubleshooting."
+      description: "Practiced Linux user management and troubleshooting.",
+      category: "Linux",
+      technologies: ["Linux", "RHEL", "Troubleshooting"]
     },
     {
       title: "Monitoring with Zabbix",
-      description: "Practiced host monitoring and alert notifications."
+      description:
+        "Practiced host monitoring and alert notifications."
     },
     {
       title: "Personal Portfolio",
-      description: "Building a portfolio with React, CSS and Git."
+      description:
+        "Building a portfolio with React, CSS and Git."
     },
     {
       title: "Ansible Automation",
-      description: "Practiced automating Linux administration tasks."
-    },
-    {
-      title: "AWS Cloud",
-      description: "Learning AWS cloud services and EC2."
+      description:
+        "Practiced automating Linux administration tasks."
     }
   ];
 
@@ -42,6 +54,9 @@ function Projects() {
             key={project.title}
             title={project.title}
             description={project.description}
+            category={project.category}
+
+            technologies={project.technologies}
           />
         ))}
       </div>
