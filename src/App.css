@@ -189,3 +189,17 @@ body {
   color: #e2e8f0;
   font-size: 12px;
 }
+
+.project-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #FFD6A5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}

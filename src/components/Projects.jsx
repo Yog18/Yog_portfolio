@@ -3,18 +3,32 @@ function ProjectCard({
   title,
   description,
   category = "General",
-  technologies = []
+  technologies = [],
+  github
+
 }) {
   return (
     <div className="project-card">
       <h3>{title}</h3>
       <span className="project-category">{category}</span>
       <p>{description}</p>
+      {technologies.length > 0 && (
       <div className="technology-list">
         {technologies.map((technology) => (
           <span key={technology}>{technology}</span>
         ))}
       </div>
+    )}
+    {github && (
+      <a
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-link"
+      >
+        View on GitHub
+      </a>
+    )}
     </div>
   );
 }
@@ -25,7 +39,8 @@ function Projects() {
       title: "Linux Administration",
       description: "Practiced Linux user management and troubleshooting.",
       category: "Linux",
-      technologies: ["Linux", "RHEL", "Troubleshooting"]
+      technologies: ["Linux", "RHEL", "Troubleshooting"],
+      github: "https://github.com/Yog18/Yog_portfolio"
     },
     {
       title: "Monitoring with Zabbix",
@@ -55,8 +70,8 @@ function Projects() {
             title={project.title}
             description={project.description}
             category={project.category}
-
             technologies={project.technologies}
+            github={project.github}
           />
         ))}
       </div>
