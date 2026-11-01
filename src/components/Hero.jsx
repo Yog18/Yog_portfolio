@@ -24,6 +24,13 @@ function Hero() {
         <a href="#projects" className="btn secondary">
           View Projects
         </a>
+        <a
+          href="/resume/Yogesh_chhabra.pdf"
+          download
+          className="btn secondary"
+        >
+          Download Resume
+        </a>
       </div>
     </main>
   );
