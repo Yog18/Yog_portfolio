@@ -1,18 +1,19 @@
-
 function Hero() {
   return (
     <main className="hero">
       <p className="intro">HELLO, WORLD! 👋</p>
 
       <h1>
-        I'm a Linux Administrator
+        Linux Administrator
         <br />
-        Learning DevOps.
+        <span>Learning DevOps & Cloud.</span>
       </h1>
 
       <p className="description">
-        Welcome to my personal portfolio.
-        I am learning Linux, Git, React and Cloud technologies.
+        I have hands-on experience in Linux server administration,
+        monitoring, troubleshooting and security patching.
+        Currently, I am expanding my skills in Git, Docker,
+        Ansible and Cloud technologies.
       </p>
 
       <div className="buttons">
@@ -20,8 +21,8 @@ function Hero() {
           About Me
         </a>
 
-        <a href="#contact" className="btn secondary">
-          Contact Me
+        <a href="#projects" className="btn secondary">
+          View Projects
         </a>
       </div>
     </main>

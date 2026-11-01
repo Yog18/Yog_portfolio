@@ -2,66 +2,70 @@
 function ProjectCard({
   title,
   description,
-  category = "General",
+  category,
   technologies = [],
   github
-
 }) {
   return (
     <div className="project-card">
       <h3>{title}</h3>
-      <span className="project-category">{category}</span>
+
+      <span className="project-category">
+        {category}
+      </span>
+
       <p>{description}</p>
-      {technologies.length > 0 && (
+
       <div className="technology-list">
         {technologies.map((technology) => (
-          <span key={technology}>{technology}</span>
+          <span key={technology}>
+            {technology}
+          </span>
         ))}
       </div>
-    )}
-    {github && (
-      <a
-        href={github}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="project-link"
-      >
-        View on GitHub
-      </a>
-    )}
+
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link"
+        >
+          View on GitHub
+        </a>
+      )}
     </div>
   );
 }
 
 function Projects() {
   const projects = [
-        {
-      title: "Linux Administration",
-      description: "Practiced Linux user management and troubleshooting.",
-      category: "Linux",
-      technologies: ["Linux", "RHEL", "Troubleshooting"],
-      github: "https://github.com/Yog18/Yog_portfolio"
+    {
+      title: "Linux Server Administration",
+      category: "Professional Experience",
+      description:
+        "Hands-on Linux administration including user management, permissions, package management, server monitoring and troubleshooting.",
+      technologies: ["RHEL", "CentOS", "Ubuntu", "Linux"]
     },
     {
-      title: "Monitoring with Zabbix",
+      title: "Zabbix Monitoring",
+      category: "Monitoring",
       description:
-        "Practiced host monitoring and alert notifications."
+        "Worked with Zabbix monitoring, host configuration, templates, alerts and server health monitoring.",
+      technologies: ["Zabbix", "Linux", "Monitoring"]
     },
     {
-      title: "Personal Portfolio",
+      title: "Personal Portfolio Website",
+      category: "Personal Project",
       description:
-        "Building a portfolio with React, CSS and Git."
-    },
-    {
-      title: "Ansible Automation",
-      description:
-        "Practiced automating Linux administration tasks."
+        "Building a responsive personal portfolio using React, CSS and GitHub.",
+      technologies: ["React", "JavaScript", "CSS", "Git"]
     }
   ];
 
   return (
     <section id="projects" className="projects">
-      <h2>My Projects</h2>
+      <h2>My Projects & Work</h2>
 
       <div className="project-list">
         {projects.map((project) => (
