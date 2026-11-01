@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <main className="hero">
+    <main id="home" className="hero">
       <p className="intro">HELLO, WORLD! 👋</p>
 
       <h1>
